@@ -80,20 +80,22 @@
 	 
 	
 	<footer>
-      <small>&copy; 2013, All Rights Reserved ~
-      <a href="https://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~
-      <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
-      </small>
-    </footer>
+			<small>Copyright &copy; <script type="text/javascript">
+				document.write("2015 - "+ new Date().getFullYear() + " " + new Date().getDate());
+				</script>
+			<a href="https://validator.w3.org/check/referer" target="_blank"></a> 
+			<a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank"></a>
+			</small>
+			</footer>
 	<!-- END Footer -->
 	<script>
 		let myDate = new Date();
-		let myhours = myDate.getHours();
+		let myHours = myDate.getHours();
 		let myGreeting ="";
 		let myColor ="";
 		let myPic="images/";
 		
-		myHours = 5; 
+		 
 	
 
 	 if( myHours>= 5 &&  myHours < 12){
@@ -103,7 +105,7 @@
 	  }
 	  else if(myHours  >= 12 && myHours <18 ){	
 		   myGreeting = "Good afternoon";		
-		   myColor = "teel" ;
+		   myColor = "orange" ;
 		   myPic += " afternoon.jpg";
 	  }
 	
