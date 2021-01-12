@@ -95,7 +95,7 @@
 		let myColor ="";
 		let myPic="images/";
 		
-		 
+		myHours=22; 
 	
 
 	 if( myHours>= 5 &&  myHours < 12){
@@ -105,19 +105,19 @@
 	  }
 	  else if(myHours  >= 12 && myHours <18 ){	
 		   myGreeting = "Good afternoon";		
-		   myColor = "orange" ;
+		   myColor ="orange" ;
 		   myPic += " afternoon.jpg";
 	  }
 	
 	  else if(myHours  >= 18 && myHours <21 ){	
 		   myGreeting = "Good evening";		
 		   myColor = "green";
-		   myPic += "evening.jpg";
+		   myPic +="evening.jpg";
 	   }
 	 else{
-		myGreeting = "night time";
+		myGreeting ="night time";
 		myColor= "brown";
-		myPic += "night.jpg"
+		myPic +="night.jpg"
 	}
 	 
 	document.getElementById('mydiv').innerHTML = myGreeting;
